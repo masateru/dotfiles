@@ -1,6 +1,6 @@
 # -*- sh -*-
 
-: ${PACKAGE_BASE_DIR:="$HOME/dot-file/.zsh.d/packages"}
+: ${PACKAGE_BASE_DIR:="$HOME/.zsh.d/packages"}
 
 package-directory()
 {
