@@ -457,6 +457,22 @@ zle -N peco-select-history
 bindkey '^r' peco-select-history
 
 ################################################################################
+# peco ghq
+# ref: http://qiita.com/ysk_1031/items/8cde9ce8b4d0870a129d
+################################################################################
+function peco-src () {
+  local selected_dir=$(ghq list -p | peco --query "$LBUFFER")
+  if [ -n "$selected_dir" ]; then
+    BUFFER="cd ${selected_dir}"
+    zle accept-line
+  fi
+  zle clear-screen
+}
+zle -N peco-src
+bindkey '^g' peco-src
+
+
+################################################################################
 # peco find
 # ref: http://qiita.com/yungsang/items/e10ca283a1ceeaa845db
 ################################################################################
@@ -498,3 +514,4 @@ alias gcd="peco-git-cd"
 alias dcd="peco-docker-cd"
 alias vcd="peco-vagrant-cd"
 alias gcd="peco-go-cd"
+

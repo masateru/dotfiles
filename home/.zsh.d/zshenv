@@ -112,3 +112,6 @@ export PATH=$PATH:$GOPATH/bin
 #export PATH=$HOME/.nodebrew/current/bin:$PATH
 #export NODEBREW_ROOT=/usr/local/var/nodebrew
 
+# homebrew cask
+# ref: http://rcmdnk.github.io/blog/2014/11/22/computer-mac-homebrew/
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
