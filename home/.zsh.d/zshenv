@@ -62,8 +62,6 @@ fi
 if type ggrep > /dev/null 2>&1; then
     alias grep=ggrep
 fi
-## デフォルトオプションの設定
-export GREP_OPTIONS
 ### バイナリファイルにはマッチさせない。
 GREP_OPTIONS="--binary-files=without-match"
 ### grep対象としてディレクトリを指定したらディレクトリ内を再帰的にgrepする。
@@ -83,6 +81,8 @@ fi
 if grep --help | grep -q -- --color; then
     GREP_OPTIONS="--color=auto $GREP_OPTIONS"
 fi
+## デフォルトオプションの設定
+export GREP_OPTIONS
 
 ## vimを使う。
 export EDITOR=vim
