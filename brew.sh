@@ -1,3 +1,5 @@
+export HOMEBREW_CASK_OPTS="--appdir=/Applications"
+
 # Make sure using latest Homebrew
 brew update
 
