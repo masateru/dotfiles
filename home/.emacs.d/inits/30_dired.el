@@ -1,11 +1,4 @@
 ;; -*- coding: utf-8 -*-
-
-;; Listing directory failed but access-file worked エラーの解消
-;; ref: http://d.hatena.ne.jp/billest/20100930/1285809840
-(when (eq system-type 'darwin)
-  (require 'ls-lisp)
-  (setq ls-lisp-use-insert-directory-program nil))
-
 ;;; Dired
 (add-hook 'dired-load-hook
           '(lambda ()
