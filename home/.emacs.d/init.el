@@ -8,7 +8,8 @@
 ;; init.elを分割する
 ;; http://tech.kayac.com/archive/divide-dot-emacs.html
 (require 'init-loader)
-(setq init-loader-show-log-after-init nil)
+;;(setq init-loader-show-log-after-init nil)
+(setq init-loader-show-log-after-init 'error-only)
 (init-loader-load "~/.emacs.d/inits")
 
 ;; 00 一般設定

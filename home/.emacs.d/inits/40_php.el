@@ -11,11 +11,11 @@
 ;;   :type '(repeat (regexp :tag "Pattern"))
 ;;   :group 'php)
 
-(let ((php-file-patterns-temp php-file-patterns))
-  (while php-file-patterns-temp
-    (add-to-list 'auto-mode-alist
-                 (cons (car php-file-patterns-temp) 'php-mode))
-    (setq php-file-patterns-temp (cdr php-file-patterns-temp))))
+;;(let ((php-file-patterns-temp php-file-patterns))
+;;  (while php-file-patterns-temp
+;;    (add-to-list 'auto-mode-alist
+;;                 (cons (car php-file-patterns-temp) 'php-mode))
+;;    (setq php-file-patterns-temp (cdr php-file-patterns-temp))))
 
 (add-hook 'php-mode-hook '(lambda ()
     (setq c-basic-offset 4)
@@ -47,10 +47,6 @@
 ;; smarty-mode
 (add-to-list 'auto-mode-alist (cons "\\.tpl\\'" 'smarty-mode))
 (autoload 'smarty-mode "smarty-mode" "Smarty Mode" t)
-
-;; symfony
-;; ref:http://d.hatena.ne.jp/IMAKADO/20090811/1249916546
-(require 'symfony)
 
 ;; ref: http://d.hatena.ne.jp/syohex/20121025/1351175067
 (add-hook 'helm-gtags-mode-hook

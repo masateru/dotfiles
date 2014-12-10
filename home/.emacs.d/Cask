@@ -8,6 +8,7 @@
 (depends-on "color-moccur")
 (depends-on "dash-at-point")
 (depends-on "dired+")
+(depends-on "dired-k")
 (depends-on "direx")
 (depends-on "editorconfig")
 (depends-on "edit-server")
@@ -47,6 +48,7 @@
 (depends-on "rainbow-mode")
 (depends-on "review-mode")
 (depends-on "rvm")
+(depends-on "savekill")
 (depends-on "shell-pop")
 (depends-on "simple-rtm")
 (depends-on "sequential-command")
@@ -60,6 +62,7 @@
 (depends-on "web-mode")
 (depends-on "yaml-mode")
 (depends-on "yasnippet")
+(depends-on "zencoding-mode")
 
 ;; php-completion
 (depends-on "php-completion"

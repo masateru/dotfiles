@@ -24,4 +24,4 @@
   (setq web-mode-asp-offset    4))
 (add-hook 'web-mode-hook 'web-mode-hook)
 
-(set-face-attribute 'web-mode-css-rule-face nil :foreground "Pink3")
+;;(set-face-attribute 'web-mode-css-rule-face nil :foreground "Pink3")
