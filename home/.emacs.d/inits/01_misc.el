@@ -44,9 +44,6 @@
 
 (read-scratch-data)
 
-;; mini bufferではIMEをOffにする
-(add-hook 'minibuffer-setup-hook 'mac-change-language-to-us)
-
 ;; findをackで行う
 (setq grep-find-command "ack --nogroup ")
 
