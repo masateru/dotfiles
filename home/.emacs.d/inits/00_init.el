@@ -4,7 +4,6 @@
 ;; http://sakito.jp/emacs/emacsshell.html#path
 ;; より下に記述した物が PATH の先頭に追加されます
 (dolist (dir (list
-	      "/System/Library/Frameworks/Ruby.framework/Versions/1.8/usr/bin"
 	      "/sbin"
 	      "/usr/sbin"
 	      "/bin"
@@ -14,8 +13,7 @@
               (expand-file-name "~/bin")
               ))
   ;; PATH と exec-path に同じ物を追加します
-  (when ;; (and 
-         (file-exists-p dir) ;; (not (member dir exec-path)))
+  (when (and (file-exists-p dir) (not (member dir exec-path)))
     (setenv "PATH" (concat dir ":" (getenv "PATH")))
     (setq exec-path (append (list dir) exec-path))))
 

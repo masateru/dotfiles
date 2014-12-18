@@ -26,7 +26,6 @@
   (untabify (point-min) (point-max))
   (indent-region (point-min) (point-max)))
 
-
 ;; 数字のインクリメント
 ;; http://d.hatena.ne.jp/rubikitch/20110221/seq
 (defun count-string-matches (regexp string)
@@ -85,5 +84,3 @@ FORMAT-STRING is like `format', but it can have multiple %-sequences."
 (global-unset-key (kbd "ESC <left>"))
 (global-set-key (kbd "ESC <right>") 'windmove-right)
 (global-set-key (kbd "ESC <left>") 'windmove-left)
-
-

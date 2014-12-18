@@ -144,7 +144,7 @@
 (global-linum-mode t)
 (set-face-attribute 'linum nil
                     :foreground "#800"
-                    :height 0.9)
+                    :height 0.8)
 ;; 行番号フォーマット
 (setq linum-format "%4d")
 
