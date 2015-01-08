@@ -52,6 +52,7 @@
 (depends-on "shell-pop")
 (depends-on "simple-rtm")
 (depends-on "sequential-command")
+(depends-on "smart-newline")
 (depends-on "sql-indent")
 (depends-on "swift-mode")
 (depends-on "tramp")

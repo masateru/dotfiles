@@ -57,3 +57,10 @@
              (local-set-key (kbd "C-t") 'helm-gtags-pop-stack)))
 
 (add-hook 'php-mode-hook 'helm-gtags-mode)
+
+
+;; smart-newline
+;; ref: http://rubikitch.com/2014/12/31/smart-newline/lll
+(add-hook 'php-mode-hook ;; or any major-mode-hooks
+	  (lambda ()
+	    (smart-newline-mode t)))
