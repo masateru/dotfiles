@@ -25,6 +25,7 @@ brew install hub
 brew install homebrew/dupes/grep
 brew install cask
 brew install ack
+brew install ipcalc
 
 # install ghq
 brew tap peco/peco || true
@@ -59,7 +60,9 @@ brew cask install google-drive
 brew cask install brackets
 brew cask install hosts
 brew cask install opera
-
+brew cask install marsedit
+brew cask install toggldesktop
+brew cask install skim
 brew tap caskroom/versions
 brew cask install firefox-ja
 
